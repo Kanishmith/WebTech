@@ -1,0 +1,89 @@
+<!DOCTYPE html>   
+<html>   
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<title>  </title>  
+<style>   
+Body {  
+  font-family: Calibri, Helvetica, sans-serif; 
+  
+  background-image: url("new.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat:none;
+  min-height: 100%;  
+}  
+button {   
+       background-color: #4CAF50;   
+       width: 20%;  
+        color: blue;   
+        padding: 15px;   
+        margin: 10px 0px;   
+        border: none;   
+        cursor: pointer;   
+         }   
+ form {   
+		font-size:31px;
+         padding-left :180px;
+		padding-right :180px;
+		padding-bottom :10px;
+		opacity:0.9;
+    }   
+ input[type=text], input[type=password] {   
+        width: 100%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px solid green;   
+        box-sizing: border-box;   
+    }  
+ button:hover {   
+        opacity: 0.7;   
+    }   
+  .cancelbtn {   
+        width: auto;   
+        padding: 10px 18px;  
+        margin: 10px 5px;  
+    }   
+        
+     
+ .container {
+		padding-left: 100px;
+        padding-right: 100px; 
+		padding-bottom: 50px;
+		padding-top:50px;
+        
+				
+    }   
+</style>   
+</head>    
+<body>    
+    <center> <h1> Entry details </h1> </center>   
+    <form action="front.html" method="post">  
+        <div class="container">   
+            <label>Name: </label>   <br>
+            <input type="text" placeholder="Enter Name" name="name">  
+            
+            <p>Select your Age</p>
+  <input type="radio" id="age1" name="age" value="0">
+  <label for="age1">18 - 30</label><br>
+  <input type="radio" id="age2" name="age" value="0">
+  <label for="age2">31 - 60</label><br>  
+  <input type="radio" id="age3" name="age" value="1">
+  <label for="age3">Above 60</label><br>
+  <br>
+
+            <label>Phone number:</label>  <br> 
+            <input type="text" placeholder="Enter phone number" name="phone" >  
+			<label>Address</label> <br>  
+            <textarea  name="Address" rows="4" cols="100">
+Enter your address here:
+</textarea>
+<br>
+<br>
+           <center><button type="back">Back</button> <button type="submit">Submit</button> </center>  
+    
+        </div>   
+    </form>     
+</body>     
+</html>
